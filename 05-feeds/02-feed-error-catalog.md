@@ -64,6 +64,17 @@ A code alone is never enough. Key = `code + message + attribute + marketplace + 
 | `18742` | RESTRICTED_PRODUCT | ERROR | нет | Restricted Products Policy |
 | `6024` / `90202` | RESTRICTION | BLOCKING | нет | Товар/бренд ограничен |
 | `4400` | APPROVAL | BLOCKING | нет | Товар требует review |
+| `8000` | GENERAL | ERROR | нет | Общая/неопределённая ошибка — читать message |
+| `8005` | UPDATE_BLOCKED | ERROR | нет | Невозможно обновить: невалидные данные существующего SKU |
+| `8007` | PARENT_NOT_FOUND | ERROR | нет | Parent SKU не найден (нет/неверный parent) |
+| `8008` | SKU_NOT_FOUND | ERROR | нет | SKU не существует |
+| `8016` | CHILD_WITHOUT_PARENT | ERROR | нет | Child без валидного parent (данные не обработаны) |
+| `8040` | SKU_NOT_FOUND | ERROR | нет | SKU не найден (вариант 8008) |
+| `8057` | INVALID_ASIN | ERROR | нет | Некорректный/несуществующий ASIN |
+| `8565` | MISSING_GTIN | ERROR | нет | Для бренда обязателен GTIN (нет UPC/EAN) |
+| `8566` | SKU_ASIN_MISMATCH | ERROR | нет | SKU не соответствует ни одному ASIN |
+| `6039` | CATEGORY_APPROVAL | BLOCKING | нет | Нет права продавать в категории |
+| `99006` | AMAZON_INTERNAL | ERROR | нет | Внутренняя ошибка Amazon (повторить) |
 
 ---
 
@@ -187,3 +198,22 @@ A code alone is never enough. Key = `code + message + attribute + marketplace + 
 ## 9. Ключевой принцип / Core principle
 
 `Error Code + Message + Attribute + Marketplace + Template Version` — вместе, никогда по одному коду. Методика полного цикла разбора (INTAKE→…→RE-ANALYZE) — в `business2business17-ui/FEED-Errors`.
+
+---
+
+## 10. Расширенные коды (кратко) / Extended codes (brief)
+
+| Код | Смысл | Решение (кратко) |
+|---|---|---|
+| `8000` | Общая ошибка | разобрать полный message |
+| `8005` | Обновление заблокировано: невалидные данные SKU | проверить обязательные поля/формат |
+| `8007` | Parent SKU не найден | создать/исправить parent SKU |
+| `8008` / `8040` | SKU не существует | проверить SKU, создать листинг |
+| `8016` | Child без валидного parent | привязать к валидному parent (см. `8032`) |
+| `8057` | Некорректный ASIN | проверить ASIN/GTIN соответствие |
+| `8565` | Обязателен GTIN (UPC/EAN) для бренда | указать корректный GTIN |
+| `8566` | SKU не соответствует ASIN | сверить SKU↔ASIN, правильный GTIN |
+| `6039` | Нет права на категорию | запросить категорийное approval |
+| `99006` | Внутренняя ошибка Amazon | повторить загрузку через время |
+
+> Коды `8000`-ряда и `8565/8566/6039/99006` — `[unverified]` (документированы, но точную формулировку сверять с текущим Processing Report). `[verified]` = из твоего `error_kb.json` и официальной модели Listings Items API.

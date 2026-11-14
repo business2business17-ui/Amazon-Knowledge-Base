@@ -24,7 +24,7 @@
   "blocks": [
     { "id": "00-global", "dir": "00-global", "title_ru": "Глобальное (рынки, глоссарий)", "title_en": "Global (markets, glossary)", "status": "done", "phase": 0, "files": ["00-markets.md", "01-glossary.md"] },
     { "id": "01-listings", "dir": "01-listings", "title_ru": "Листинги", "title_en": "Listings", "status": "done", "phase": 1, "files": ["01-listing-structure.md"] },
-    { "id": "02-pricing", "dir": "02-pricing", "title_ru": "Цены и градации", "title_en": "Pricing & price gradients", "status": "done", "phase": 1, "files": ["01-price-gradients.md"] },
+    { "id": "02-pricing", "dir": "02-pricing", "title_ru": "Цены и градации", "title_en": "Pricing & price gradients", "status": "done", "phase": 1, "files": ["01-price-gradients.md", "02-pricing-health.md"] },
     { "id": "03-seo", "dir": "03-seo", "title_ru": "SEO", "title_en": "SEO", "status": "done", "phase": 1, "files": ["01-seo-rankings.md"] },
     { "id": "04-ppc", "dir": "04-ppc", "title_ru": "PPC (реклама)", "title_en": "PPC (advertising)", "status": "done", "phase": 1, "files": ["01-ppc-overview.md"] },
     { "id": "05-feeds", "dir": "05-feeds", "title_ru": "Feeds", "title_en": "Feeds", "status": "done", "phase": 1, "files": ["01-feeds-overview.md", "02-feed-error-catalog.md", "03-json-listings-feed-schema.md"] },
@@ -32,9 +32,10 @@
     { "id": "07-advertising", "dir": "07-advertising", "title_ru": "Реклама (углублённо)", "title_en": "Advertising (deep dive)", "status": "done", "phase": 2, "files": ["01-ads-api.md"] },
     { "id": "08-variations", "dir": "08-variations", "title_ru": "Вариации (parent/child)", "title_en": "Variations (parent/child)", "status": "done", "phase": 2, "files": ["01-variations.md"] },
     { "id": "09-design", "dir": "09-design", "title_ru": "Дизайн (карусель, A+, Brand Store, видео)", "title_en": "Design (carousel, A+, Brand Store, video)", "status": "done", "phase": 3, "files": ["01-design.md"] },
-    { "id": "10-logistics", "dir": "10-logistics", "title_ru": "Логистика (FBA, FBM, LTL, SPD, AWD)", "title_en": "Logistics", "status": "done", "phase": 3, "files": ["01-logistics.md"] },
-    { "id": "11-account", "dir": "11-account", "title_ru": "Аккаунт (support, vendor, программы)", "title_en": "Account (support, vendor, programs)", "status": "done", "phase": 3, "files": ["01-account.md"] },
-    { "id": "12-lifehacks", "dir": "12-lifehacks", "title_ru": "Лайфхаки 2026 и форум-опыт", "title_en": "Lifehacks 2026 & forum experience", "status": "done", "phase": 3, "files": ["01-lifehacks.md", "02-forum-2026.md"] }
+    { "id": "10-logistics", "dir": "10-logistics", "title_ru": "Логистика (FBA, FBM, LTL, SPD, AWD)", "title_en": "Logistics", "status": "done", "phase": 3, "files": ["01-logistics.md", "02-fba-fees.md"] },
+    { "id": "11-account", "dir": "11-account", "title_ru": "Аккаунт (support, vendor, программы)", "title_en": "Account (support, vendor, programs)", "status": "done", "phase": 3, "files": ["01-account.md", "02-compliance-b2b-global.md"] },
+    { "id": "12-lifehacks", "dir": "12-lifehacks", "title_ru": "Лайфхаки 2026 и форум-опыт", "title_en": "Lifehacks 2026 & forum experience", "status": "done", "phase": 3, "files": ["01-lifehacks.md", "02-forum-2026.md"] },
+    { "id": "13-sp-api", "dir": "13-sp-api", "title_ru": "SP-API (auth, домены, отчёты, Catalog)", "title_en": "SP-API (auth, domains, reports, Catalog)", "status": "done", "phase": 3, "files": ["01-auth-lwa.md", "02-api-domains.md", "03-reports.md", "04-catalog-items.md"] }
   ],
   "tags": {
     "listing": ["01-listings", "03-seo", "08-variations"],
