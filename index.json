@@ -23,9 +23,9 @@
   ],
   "blocks": [
     { "id": "00-global", "dir": "00-global", "title_ru": "Глобальное (рынки, глоссарий)", "title_en": "Global (markets, glossary)", "status": "done", "phase": 0, "files": ["00-markets.md", "01-glossary.md"] },
-    { "id": "01-listings", "dir": "01-listings", "title_ru": "Листинги", "title_en": "Listings", "status": "todo", "phase": 1, "files": [] },
+    { "id": "01-listings", "dir": "01-listings", "title_ru": "Листинги", "title_en": "Listings", "status": "done", "phase": 1, "files": ["01-listing-structure.md"] },
     { "id": "02-pricing", "dir": "02-pricing", "title_ru": "Цены и градации", "title_en": "Pricing & price gradients", "status": "done", "phase": 1, "files": ["01-price-gradients.md"] },
-    { "id": "03-seo", "dir": "03-seo", "title_ru": "SEO", "title_en": "SEO", "status": "todo", "phase": 1, "files": [] },
+    { "id": "03-seo", "dir": "03-seo", "title_ru": "SEO", "title_en": "SEO", "status": "done", "phase": 1, "files": ["01-seo-rankings.md"] },
     { "id": "04-ppc", "dir": "04-ppc", "title_ru": "PPC (реклама)", "title_en": "PPC (advertising)", "status": "todo", "phase": 1, "files": [] },
     { "id": "05-feeds", "dir": "05-feeds", "title_ru": "Feeds", "title_en": "Feeds", "status": "todo", "phase": 1, "files": [] },
     { "id": "06-promotions", "dir": "06-promotions", "title_ru": "Промо (coupons, deals, vouchers, vine)", "title_en": "Promotions", "status": "todo", "phase": 2, "files": [] },
