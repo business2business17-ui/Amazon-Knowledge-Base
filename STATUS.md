@@ -1,0 +1,73 @@
+# Статус проекта Amazon (база знаний + агенты)
+
+Дата снимка: 2026-11-14. Как возобновить: скажи «продолжаем Amazon» — читай этот файл.
+
+---
+
+## Где что лежит
+
+| Путь | Что это | Git |
+|---|---|---|
+| `C:\Users\adria\Amazon-Knowledge-Base` | **База знаний** (14 блоков, 25 MD + index.json) | ✅ init, 10 коммитов, готов к push |
+| `C:\Users\adria\Amazon-Agents` | **Агенты** (128 скиллов + 22 блока базы) | ✅ init, 3 коммита, готов к push |
+| `C:\Users\adria\txt-repos` | **Исходники из `Amazon skills.txt`** (36 клонов) | — (просто клоны) |
+| `C:\Users\adria\agents-embed` | временный клон твоего `Agents` | можно удалить |
+| `S:\US AMAZON API` | твой SP-API проект (MOBILIUS) | только чтение, не менять |
+
+---
+
+## Сделано
+
+### 1. База знаний (Amazon-Knowledge-Base)
+- **14 блоков**: `00-global` (13 рынков + глоссарий), `01-listings`, `02-pricing` (+Pricing Health), `03-seo`, `04-ppc`, `05-feeds` (обзор + **полный каталог ошибок ~38 кодов** + **JSON-схема JSON_LISTINGS_FEED**), `06-promotions`, `07-advertising`, `08-variations`, `09-design`, `10-logistics` (+FBA fees), `11-account` (+compliance/B2B/Global Selling), `12-lifehacks` (лайфхаки + **forum-2026**), `13-sp-api` (auth/domains/reports/catalog-items).
+- Формат: MD двуязычный (RU+EN) + `index.json` манифест. US — эталон, 12 рынков — дельты.
+- Источники: офиц. доки (developer-docs.amazon.com + JSON-схемы amzn/selling-partner-api-models) + Seller Forums (obscura).
+
+### 2. Seller Forums через obscura
+- Форум **глобальный** (страновые поддомены редиректят). Скрейп 4 категорий → `12-lifehacks/02-forum-2026.md`.
+- Сырые дампы + карта категорий/стран — `scraped/`.
+
+### 3. Агенты (Amazon-Agents)
+- Твои 4 агента (`amazon-seo-listings`, `amazon-ppc`, `amazon-feeds`, `amazon-creative-studio`) + **22 блока базы** в `references/kb/`.
+- **+33 импортированных Amazon-скилла** (см. `IMPORTED_SKILLS.md`): amzn/selling-partner-agentic-toolkit (12), sellerstack (12), zach22 (7), Rufus/Cosmo (1), AI-shopping-CN (1).
+- Итого 128 скиллов.
+
+---
+
+## Осталось (план)
+
+### A. Push в GitHub — ждёт пустых репо
+`gh` не установлен, но кэшированная авторизация работает (`git ls-remote` ок).
+Создать пустые репо **без README/license**, затем:
+```
+cd C:\Users\adria\Amazon-Knowledge-Base
+git remote add origin https://github.com/business2business17-ui/Amazon-Knowledge-Base.git
+git push -u origin main
+# аналогично Amazon-Agents
+```
+
+### B. Отдельный мультимаркетплейс-агент (позже, отдельной сессией)
+Вынести в отдельного агента (с этими рынками иногда работаешь):
+- **sealeap-ecommerce-skills** (195 скиллов): eBay / Etsy / MercadoLibre / Ozon / Shopify / TikTokShop / Walmart / Wayfair — **Amazon внутри нет**.
+- **Веб-SEO** (не Amazon-маркетплейс, но пригодится для Shopify/сайтов): `chatgpt-seo` (27), `claude-seo` (35), `seo-skills` (3), `ecommerce-seo-geo-skills` (12), `ai-seo-skill`, `ecommerce-seo-audit-skill`.
+- Всё уже склонировано в `C:\Users\adria\txt-repos\`.
+
+### C. Код/дашборды/MCP (отдельной сессией)
+Тоже нужны — лежат в `txt-repos\`, решить как встроить:
+- **MCP-серверы**: `amazon-ads-mcp`, `amazon-omniscient`, `RankGap`, `amazon-seo-tool`, `amazon-searchterm-249-optimizer`, `seo-tool-claude-seo`, `ecommerce-seo-optimizer`, `aiamazonseo`, `kdp-scout`, `ecommerce-reviews-RAG`, `awesome-amazon-ec-skills` (список), `amazon-fba-calculator`, `Amazon-FBA-Profit-Calculator---Complete-Source-Code`.
+- **Дашборды** (Excel/PowerBI, 12 шт): Amazon-Sales-Analysis-*, PowerBI-*, data-analysis.
+
+> Примечание: два репо `Amazon_Sales_Product_-_Revenue_Analysis_Excel` (minullaksen и soumimukherjee22) имеют одинаковое имя — в `txt-repos` один из них из-за коллизии не доехал (почти дубли).
+
+---
+
+## Как возобновить
+
+1. «продолжаем Amazon» → прочитать этот файл.
+2. Сверить, какие репо уже созданы на GitHub (если создал — сразу push).
+3. Если созданы — push A; затем B (мультимаркетплейс-агент) или C (код/MCP).
+
+## Инструменты окружения
+- `obscura` (`C:\Users\adria\tools\obscura-bin\obscura.exe`) — headless-браузер для скрейпа.
+- `websearch` в этой сессии был недоступен → источники тянул через `webfetch` официальных доков + JSON-схем.
+- Git identity: `Keos` <business2business17@gmail.com>; `gh` CLI **не установлен**.
