@@ -27,7 +27,7 @@
     { "id": "02-pricing", "dir": "02-pricing", "title_ru": "Цены и градации", "title_en": "Pricing & price gradients", "status": "done", "phase": 1, "files": ["01-price-gradients.md"] },
     { "id": "03-seo", "dir": "03-seo", "title_ru": "SEO", "title_en": "SEO", "status": "done", "phase": 1, "files": ["01-seo-rankings.md"] },
     { "id": "04-ppc", "dir": "04-ppc", "title_ru": "PPC (реклама)", "title_en": "PPC (advertising)", "status": "done", "phase": 1, "files": ["01-ppc-overview.md"] },
-    { "id": "05-feeds", "dir": "05-feeds", "title_ru": "Feeds", "title_en": "Feeds", "status": "done", "phase": 1, "files": ["01-feeds-overview.md"] },
+    { "id": "05-feeds", "dir": "05-feeds", "title_ru": "Feeds", "title_en": "Feeds", "status": "done", "phase": 1, "files": ["01-feeds-overview.md", "02-feed-error-catalog.md", "03-json-listings-feed-schema.md"] },
     { "id": "06-promotions", "dir": "06-promotions", "title_ru": "Промо (coupons, deals, vouchers, vine)", "title_en": "Promotions", "status": "done", "phase": 2, "files": ["01-promotions.md"] },
     { "id": "07-advertising", "dir": "07-advertising", "title_ru": "Реклама (углублённо)", "title_en": "Advertising (deep dive)", "status": "done", "phase": 2, "files": ["01-ads-api.md"] },
     { "id": "08-variations", "dir": "08-variations", "title_ru": "Вариации (parent/child)", "title_en": "Variations (parent/child)", "status": "done", "phase": 2, "files": ["01-variations.md"] },
