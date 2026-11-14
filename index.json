@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "name": "Amazon Seller Knowledge Base",
+  "name_ru": "База знаний селлера Amazon",
+  "version": "0.1.0",
+  "updated": "2026-11-14",
+  "language": "ru+en",
+  "depth_model": "US is the reference marketplace (full detail); UK/EU/MENA are deltas (differences only).",
+  "markets": [
+    { "code": "US", "name": "United States", "name_ru": "США", "marketplaceId": "ATVPDKIKX0DER", "domain": "amazon.com", "region": "NA", "currency": "USD", "language": "en_US", "vat": "sales tax (by state)", "taxCode": "A_GEN_TAX" },
+    { "code": "UK", "name": "United Kingdom", "name_ru": "Великобритания", "marketplaceId": "A1F83G8C2ARO7P", "domain": "amazon.co.uk", "region": "EU", "currency": "GBP", "language": "en_GB", "vat": "VAT 20%", "taxCode": "A_GEN_Standard" },
+    { "code": "DE", "name": "Germany", "name_ru": "Германия", "marketplaceId": "A1PA6795UKMFR9", "domain": "amazon.de", "region": "EU", "currency": "EUR", "language": "de_DE", "vat": "VAT 19%", "taxCode": "A_GEN_Standard" },
+    { "code": "FR", "name": "France", "name_ru": "Франция", "marketplaceId": "A13V1IB3VIYZZH", "domain": "amazon.fr", "region": "EU", "currency": "EUR", "language": "fr_FR", "vat": "VAT 20%", "taxCode": "A_GEN_Standard" },
+    { "code": "IT", "name": "Italy", "name_ru": "Италия", "marketplaceId": "APJ6JRA9NG5V4", "domain": "amazon.it", "region": "EU", "currency": "EUR", "language": "it_IT", "vat": "VAT 22%", "taxCode": "A_GEN_Standard" },
+    { "code": "ES", "name": "Spain", "name_ru": "Испания", "marketplaceId": "A1RKKUPIHCS9HS", "domain": "amazon.es", "region": "EU", "currency": "EUR", "language": "es_ES", "vat": "VAT 21%", "taxCode": "A_GEN_Standard" },
+    { "code": "NL", "name": "Netherlands", "name_ru": "Нидерланды", "marketplaceId": "A1805IZSGTT6HS", "domain": "amazon.nl", "region": "EU", "currency": "EUR", "language": "nl_NL", "vat": "VAT 21%", "taxCode": "A_GEN_Standard" },
+    { "code": "SE", "name": "Sweden", "name_ru": "Швеция", "marketplaceId": "A2NODRKZP88ZB9", "domain": "amazon.se", "region": "EU", "currency": "SEK", "language": "sv_SE", "vat": "VAT 25%", "taxCode": "A_GEN_Standard" },
+    { "code": "PL", "name": "Poland", "name_ru": "Польша", "marketplaceId": "A1C3SOZRARQ6R3", "domain": "amazon.pl", "region": "EU", "currency": "PLN", "language": "pl_PL", "vat": "VAT 23%", "taxCode": "A_GEN_Standard" },
+    { "code": "BE", "name": "Belgium", "name_ru": "Бельгия", "marketplaceId": "AMEN7PMS3EDWL", "domain": "amazon.com.be", "region": "EU", "currency": "EUR", "language": "nl_BE/fr_BE", "vat": "VAT 21%", "taxCode": "A_GEN_Standard" },
+    { "code": "TR", "name": "Turkey", "name_ru": "Турция", "marketplaceId": "A33AVAJ2PDY3EV", "domain": "amazon.com.tr", "region": "EU", "currency": "TRY", "language": "tr_TR", "vat": "VAT 20% (unverified)", "taxCode": "A_GEN_Standard (unverified)" },
+    { "code": "AE", "name": "United Arab Emirates", "name_ru": "ОАЭ", "marketplaceId": "A2VIGQ35RCS4UG", "domain": "amazon.ae", "region": "EU", "currency": "AED", "language": "en_AE/ar_AE", "vat": "VAT 5%", "taxCode": "A_GEN_TAX (unverified)" },
+    { "code": "SA", "name": "Saudi Arabia", "name_ru": "Саудовская Аравия", "marketplaceId": "A17E79C6D8DWNP", "domain": "amazon.sa", "region": "EU", "currency": "SAR", "language": "en_SA/ar_SA", "vat": "VAT 15%", "taxCode": "A_GEN_TAX (unverified)" }
+  ],
+  "blocks": [
+    { "id": "00-global", "dir": "00-global", "title_ru": "Глобальное (рынки, глоссарий)", "title_en": "Global (markets, glossary)", "status": "done", "phase": 0, "files": ["00-markets.md", "01-glossary.md"] },
+    { "id": "01-listings", "dir": "01-listings", "title_ru": "Листинги", "title_en": "Listings", "status": "todo", "phase": 1, "files": [] },
+    { "id": "02-pricing", "dir": "02-pricing", "title_ru": "Цены и градации", "title_en": "Pricing & price gradients", "status": "todo", "phase": 1, "files": [] },
+    { "id": "03-seo", "dir": "03-seo", "title_ru": "SEO", "title_en": "SEO", "status": "todo", "phase": 1, "files": [] },
+    { "id": "04-ppc", "dir": "04-ppc", "title_ru": "PPC (реклама)", "title_en": "PPC (advertising)", "status": "todo", "phase": 1, "files": [] },
+    { "id": "05-feeds", "dir": "05-feeds", "title_ru": "Feeds", "title_en": "Feeds", "status": "todo", "phase": 1, "files": [] },
+    { "id": "06-promotions", "dir": "06-promotions", "title_ru": "Промо (coupons, deals, vouchers, vine)", "title_en": "Promotions", "status": "todo", "phase": 2, "files": [] },
+    { "id": "07-advertising", "dir": "07-advertising", "title_ru": "Реклама (углублённо)", "title_en": "Advertising (deep dive)", "status": "todo", "phase": 2, "files": [] },
+    { "id": "08-variations", "dir": "08-variations", "title_ru": "Вариации (parent/child)", "title_en": "Variations (parent/child)", "status": "todo", "phase": 2, "files": [] },
+    { "id": "09-design", "dir": "09-design", "title_ru": "Дизайн (карусель, A+, Brand Store, видео)", "title_en": "Design (carousel, A+, Brand Store, video)", "status": "todo", "phase": 3, "files": [] },
+    { "id": "10-logistics", "dir": "10-logistics", "title_ru": "Логистика (FBA, FBM, LTL, SPD, AWD)", "title_en": "Logistics", "status": "todo", "phase": 3, "files": [] },
+    { "id": "11-account", "dir": "11-account", "title_ru": "Аккаунт (support, vendor, программы)", "title_en": "Account (support, vendor, programs)", "status": "todo", "phase": 3, "files": [] },
+    { "id": "12-lifehacks", "dir": "12-lifehacks", "title_ru": "Лайфхаки 2026 и форум-опыт", "title_en": "Lifehacks 2026 & forum experience", "status": "todo", "phase": 3, "files": [] }
+  ],
+  "tags": {
+    "listing": ["01-listings", "03-seo", "08-variations"],
+    "pricing": ["02-pricing", "06-promotions"],
+    "advertising": ["04-ppc", "07-advertising"],
+    "feeds": ["05-feeds"],
+    "design": ["09-design"],
+    "logistics": ["10-logistics"],
+    "account": ["11-account"],
+    "lifehack": ["12-lifehacks"]
+  },
+  "sources": {
+    "marketplace_ids": {
+      "url": "https://developer-docs.amazon.com/sp-api/docs/marketplace-ids",
+      "kind": "official",
+      "verified": true,
+      "fetched": "2026-11-14"
+    }
+  }
+}
