@@ -35,7 +35,8 @@
     { "id": "10-logistics", "dir": "10-logistics", "title_ru": "Логистика (FBA, FBM, LTL, SPD, AWD)", "title_en": "Logistics", "status": "done", "phase": 3, "files": ["01-logistics.md", "02-fba-fees.md"] },
     { "id": "11-account", "dir": "11-account", "title_ru": "Аккаунт (support, vendor, программы)", "title_en": "Account (support, vendor, programs)", "status": "done", "phase": 3, "files": ["01-account.md", "02-compliance-b2b-global.md"] },
     { "id": "12-lifehacks", "dir": "12-lifehacks", "title_ru": "Лайфхаки 2026 и форум-опыт", "title_en": "Lifehacks 2026 & forum experience", "status": "done", "phase": 3, "files": ["01-lifehacks.md", "02-forum-2026.md"] },
-    { "id": "13-sp-api", "dir": "13-sp-api", "title_ru": "SP-API (auth, домены, отчёты, Catalog)", "title_en": "SP-API (auth, domains, reports, Catalog)", "status": "done", "phase": 3, "files": ["01-auth-lwa.md", "02-api-domains.md", "03-reports.md", "04-catalog-items.md"] }
+    { "id": "13-sp-api", "dir": "13-sp-api", "title_ru": "SP-API (auth, домены, отчёты, Catalog)", "title_en": "SP-API (auth, domains, reports, Catalog)", "status": "done", "phase": 3, "files": ["01-auth-lwa.md", "02-api-domains.md", "03-reports.md", "04-catalog-items.md"] },
+    { "id": "14-tools", "dir": "14-tools", "title_ru": "Код/MCP/дашборды (инвентарь)", "title_en": "Code/MCP/dashboards (inventory)", "status": "done", "phase": 3, "files": ["README.md"] }
   ],
   "tags": {
     "listing": ["01-listings", "03-seo", "08-variations"],

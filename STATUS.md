@@ -37,15 +37,9 @@
 
 ## Осталось (план)
 
-### A. Push в GitHub — ждёт пустых репо
-`gh` не установлен, но кэшированная авторизация работает (`git ls-remote` ок).
-Создать пустые репо **без README/license**, затем:
-```
-cd C:\Users\adria\Amazon-Knowledge-Base
-git remote add origin https://github.com/business2business17-ui/Amazon-Knowledge-Base.git
-git push -u origin main
-# аналогично Amazon-Agents
-```
+### A. Push в GitHub — ✅ СДЕЛАНО (2026-11-15)
+Запушены 3 репо в `business2business17-ui`:
+- `Amazon-Knowledge-Base`, `Amazon-Agents`, `Marketplace-Agents` (все — ветка `main`).
 
 ### B. Отдельный мультимаркетплейс-агент — ✅ СДЕЛАНО (2026-11-15)
 Собран в `C:\Users\adria\Marketplace-Agents` (274 скилла, 1 коммит):
@@ -53,12 +47,9 @@ git push -u origin main
 - `web-seo/` — chatgpt-seo (27), claude-seo (26+extensions), seo-skills (3), ecommerce-seo-geo (12), ai-seo-skill, ecommerce-seo-audit-skill.
 - Готов к push (нужен пустой репо `Marketplace-Agents`).
 
-### C. Код/дашборды/MCP (отдельной сессией)
-Тоже нужны — лежат в `txt-repos\`, решить как встроить:
-- **MCP-серверы**: `amazon-ads-mcp`, `amazon-omniscient`, `RankGap`, `amazon-seo-tool`, `amazon-searchterm-249-optimizer`, `seo-tool-claude-seo`, `ecommerce-seo-optimizer`, `aiamazonseo`, `kdp-scout`, `ecommerce-reviews-RAG`, `awesome-amazon-ec-skills` (список), `amazon-fba-calculator`, `Amazon-FBA-Profit-Calculator---Complete-Source-Code`.
-- **Дашборды** (Excel/PowerBI, 12 шт): Amazon-Sales-Analysis-*, PowerBI-*, data-analysis.
-
-> Примечание: два репо `Amazon_Sales_Product_-_Revenue_Analysis_Excel` (minullaksen и soumimukherjee22) имеют одинаковое имя — в `txt-repos` один из них из-за коллизии не доехал (почти дубли).
+### C. Код/дашборды/MCP — ✅ инвентарь готов (2026-11-15)
+Инвентарь в `14-tools/README.md` (в базе знаний): 2 MCP-сервера (amazon-ads-mcp, amazon-omniscient), 8 тулзов/калькуляторов, 2 справочных, 11 дашбордов, 1 мёртвый (ecommerce-reviews-RAG — пустой).
+Дальше по желанию: развернуть `amazon-omniscient` (self-hosted) и подключить `amazon-ads-mcp` (нужен Ads-доступ).
 
 ---
 
