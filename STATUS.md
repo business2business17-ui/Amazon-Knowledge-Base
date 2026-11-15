@@ -10,6 +10,7 @@
 |---|---|---|
 | `C:\Users\adria\Amazon-Knowledge-Base` | **База знаний** (14 блоков, 25 MD + index.json) | ✅ init, 10 коммитов, готов к push |
 | `C:\Users\adria\Amazon-Agents` | **Агенты** (128 скиллов + 22 блока базы) | ✅ init, 3 коммита, готов к push |
+| `C:\Users\adria\Marketplace-Agents` | **Мультимаркетплейс-агент** (274 скилла: sealeap + веб-SEO) | ✅ init, 1 коммит, готов к push |
 | `C:\Users\adria\txt-repos` | **Исходники из `Amazon skills.txt`** (36 клонов) | — (просто клоны) |
 | `C:\Users\adria\agents-embed` | временный клон твоего `Agents` | можно удалить |
 | `S:\US AMAZON API` | твой SP-API проект (MOBILIUS) | только чтение, не менять |
@@ -46,11 +47,11 @@ git push -u origin main
 # аналогично Amazon-Agents
 ```
 
-### B. Отдельный мультимаркетплейс-агент (позже, отдельной сессией)
-Вынести в отдельного агента (с этими рынками иногда работаешь):
-- **sealeap-ecommerce-skills** (195 скиллов): eBay / Etsy / MercadoLibre / Ozon / Shopify / TikTokShop / Walmart / Wayfair — **Amazon внутри нет**.
-- **Веб-SEO** (не Amazon-маркетплейс, но пригодится для Shopify/сайтов): `chatgpt-seo` (27), `claude-seo` (35), `seo-skills` (3), `ecommerce-seo-geo-skills` (12), `ai-seo-skill`, `ecommerce-seo-audit-skill`.
-- Всё уже склонировано в `C:\Users\adria\txt-repos\`.
+### B. Отдельный мультимаркетплейс-агент — ✅ СДЕЛАНО (2026-11-15)
+Собран в `C:\Users\adria\Marketplace-Agents` (274 скилла, 1 коммит):
+- `marketplaces/` — sealeap (eBay/Etsy/MercadoLibre/Ozon/Shopify/TikTokShop/Walmart/Wayfair, 195 скиллов).
+- `web-seo/` — chatgpt-seo (27), claude-seo (26+extensions), seo-skills (3), ecommerce-seo-geo (12), ai-seo-skill, ecommerce-seo-audit-skill.
+- Готов к push (нужен пустой репо `Marketplace-Agents`).
 
 ### C. Код/дашборды/MCP (отдельной сессией)
 Тоже нужны — лежат в `txt-repos\`, решить как встроить:
