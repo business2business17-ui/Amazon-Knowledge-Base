@@ -1,4 +1,4 @@
-﻿---
+---
 id: tools-code
 title: { ru: "РљРѕРґ / MCP / РґР°С€Р±РѕСЂРґС‹ (РёРЅРІРµРЅС‚Р°СЂСЊ РёР· txt)", en: "Code / MCP / dashboards (inventory from txt)" }
 block: 14-tools
@@ -10,7 +10,7 @@ updated: 2026-11-15
 
 # РљРѕРґ / MCP / РґР°С€Р±РѕСЂРґС‹ вЂ” РёРЅРІРµРЅС‚Р°СЂСЊ / Code / MCP / dashboards inventory
 
-РРЅРІРµРЅС‚Р°СЂСЊ СЂРµРїРѕР·РёС‚РѕСЂРёРµРІ РёР· `Amazon skills.txt` **Р±РµР· СЃРєРёР»Р»РѕРІ** (РєРѕРґ/С‚СѓР»Р·С‹/MCP/РґР°С€Р±РѕСЂРґС‹). РСЃС…РѕРґРЅРёРєРё вЂ” `C:\Users\adria\AMAZON\txt-repos\`. РЎРєРёР»Р»С‹ СѓР¶Рµ СЂР°Р·РЅРµСЃРµРЅС‹ РїРѕ Р°РіРµРЅС‚Р°Рј (`Amazon-Agents`, `Marketplace-Agents`).
+РРЅРІРµРЅС‚Р°СЂСЊ СЂРµРїРѕР·РёС‚РѕСЂРёРµРІ РёР· `Amazon skills.txt` **Р±РµР· СЃРєРёР»Р»РѕРІ** (РєРѕРґ/С‚СѓР»Р·С‹/MCP/РґР°С€Р±РѕСЂРґС‹). РСЃС…РѕРґРЅРёРєРё вЂ” `C:\Users\adria\AMAZON\txt-repos\`. РЎРєРёР»Р»С‹ СѓР¶Рµ СЂР°Р·РЅРµСЃРµРЅС‹ РїРѕ Р°РіРµРЅС‚Р°Рј (`DEEP-Amazon-Agents`, `DEEP-Marketplace-Agents`).
 
 Inventory of the non-skill repos from `Amazon skills.txt`. Sources in `C:\Users\adria\AMAZON\txt-repos\`.
 
@@ -41,7 +41,7 @@ Inventory of the non-skill repos from `Amazon skills.txt`. Sources in `C:\Users\
 | Р РµРїРѕ | Р§С‚Рѕ СЌС‚Рѕ |
 |---|---|
 | **awesome-amazon-ec-skills** | РљСѓСЂРёСЂСѓРµРјС‹Р№ СЃРїРёСЃРѕРє AI-СЃРєРёР»Р»РѕРІ РґР»СЏ Amazon (CN) вЂ” РєР°С‚Р°Р»РѕРі СЃСЃС‹Р»РѕРє |
-| **seo-tool-claude-seo** | РЈРєР°Р·Р°С‚РµР»СЊ РЅР° РїР»Р°РіРёРЅ Claude SEO (СЃР°Рј РїР»Р°РіРёРЅ СѓР¶Рµ РІ `Marketplace-Agents/web-seo/claude-seo-skills`) |
+| **seo-tool-claude-seo** | РЈРєР°Р·Р°С‚РµР»СЊ РЅР° РїР»Р°РіРёРЅ Claude SEO (СЃР°Рј РїР»Р°РіРёРЅ СѓР¶Рµ РІ `DEEP-Marketplace-Agents/web-seo/claude-seo-skills`) |
 
 ## 4. Р”Р°С€Р±РѕСЂРґС‹ (Excel/PowerBI/EDA) / Dashboards
 
