@@ -18,7 +18,7 @@
 ## Структура / Structure
 
 ```
-amazon-knowledge-base/
+DEEP-Amazon-Knowledge-Base/
 ├─ index.json                 ← манифест (машиночитаемый). Читай первым.
 ├─ README.md                  ← этот файл
 ├─ 00-global/                 ← 13 рынков, глоссарий, сквозные правила
